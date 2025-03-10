@@ -38,7 +38,7 @@ const vragen = [
 let vorigeVragen = [];
 let timerInterval = null;
 const countdownTime = 30; // Starttijd in seconden
-const intervalTime = 100; // 1 seconde interval
+const intervalTime = 1000; // 1 seconde interval
 
 const kiesRandomVraag = () => {
   if (vorigeVragen.length === vragen.length) vorigeVragen = [];
