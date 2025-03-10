@@ -32,7 +32,10 @@ const vragen = [
   "Noem iets te eten",
   "Noem iets wat je kan bestellen in een restaurant",
   "Noem een ziekte",
-  "Noem een kleur"
+  "Noem een kleur",
+  "Noem iets wat je bij de slager kan halen",
+  "Noem een youtube kanaal",
+  "Noem iets waarmee je een moord kan plegen"
 ];
 
 let vorigeVragen = [];
