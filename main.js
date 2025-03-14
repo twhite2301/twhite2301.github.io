@@ -78,7 +78,7 @@ const startCountdown = () => {
       countdown--;
       textContainer.innerHTML = `<p>${nieuweVraag}<br>Countdown: ${countdown}</p>`;
       
-      if (countdown < 0) {
+      if (countdown < 1) {
           clearInterval(timerInterval);
           textContainer.innerHTML = "Jij gaat naar Jilla!"; // Tekst verbergen
           mediaContainer.innerHTML = `<img id="mediaContainer" src="monopolie.jpeg" alt="de tijd is om!">`;
