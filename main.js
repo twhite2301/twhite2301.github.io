@@ -45,13 +45,14 @@ const intervalTime = 1000; // 1 seconde interval
 
 const kiesRandomVraag = () => {
   if (vorigeVragen.length === vragen.length) vorigeVragen = [];
-  let randomVraag;
+
+  let randomIndex;
   do {
-      const randomIndex = Math.floor(Math.random() * vragen.length);
-      randomVraag = vragen[randomIndex];
-  } while (vorigeVragen.includes(randomVraag));
-  vorigeVragen.push(randomVraag);
-  return randomVraag;
+    randomIndex = Math.floor(Math.random() * vragen.length);
+  } while (vorigeVragen.includes(randomIndex));
+
+  vorigeVragen.push(randomIndex);
+  return vragen[randomIndex];
 };
 
 const kiesRandomLetter = () => {
